@@ -40,6 +40,9 @@ To train our approach, please refer to [Experiments](./Experiments) for more det
 1. Release pretrained weights on Matterport3D and PanoSUNCG.
 2. Provide simple inference code.
 
+## Credits
+Our [BasePhotometric.py](./BiFusev2/Loss/BasePhotometric.py) is modified from [link](https://github.com/ClementPinard/SfmLearner-Pytorch).
+
 ## License
 This work is licensed under MIT License. See [LICENSE](./LICENSE) for details.
 
