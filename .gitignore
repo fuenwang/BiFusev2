@@ -1,0 +1,12 @@
+*.pyc
+*.swp
+*experiment
+experiment*
+checkpoints
+save*
+*pth.tar
+exp*/
+*.zip
+output/
+.vscode
+__pycache__

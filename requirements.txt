@@ -1,0 +1,13 @@
+numpy
+scipy
+imageio
+opencv-python-headless
+attrdict
+tensorboard
+--extra-index-url https://download.pytorch.org/whl/cu116
+torch
+--extra-index-url https://download.pytorch.org/whl/cu116
+torchvision
+--extra-index-url https://download.pytorch.org/whl/cu116
+torchaudio
+pytorch_lightning

@@ -1,0 +1,53 @@
+dataset_args:
+    train:
+        dataset_type: &dataset_type 'SelfSupervisedDataset'
+        mode: 'train'
+        shape: &shape [512, 1024]
+        dataset_path: &dataset_path '##### DATA FOLDER ######'
+        frame_interval: 1
+        loader_args:
+            batch_size: 8
+            num_workers: &num_workers 10
+            shuffle: True
+            drop_last: True
+            pin_memory: False
+    val:
+        dataset_type: *dataset_type
+        mode: 'val'
+        shape: *shape
+        dataset_path: *dataset_path
+        frame_interval: 1
+        loader_args:
+            batch_size: 8
+            num_workers: *num_workers
+            shuffle: False
+            drop_last: False
+            pin_memory: False
+fitting_args:
+    optimizer_args:
+        type: 'Adam'
+        args:
+            lr: 0.0003
+    scheduler_args: NULL
+network_args:
+    save_path: './save'
+    dnet_args:
+        layers: 34
+        CE_equi_h: [8, 16, 32, 64, 128, 256, 512]
+    pnet_args:
+        layers: 18
+        nb_tgts: 2
+metric_args:
+    field_names: ['mae', 'rmse', 'rmse_log', 'mre', 'delta1', 'delta2', 'delta3']
+    align_median: True
+exp_args:
+    seed: 229
+    #seed: 255
+    epoch: 200
+    exp_path: './experiment'
+    exp_freq: 3000
+    #logger_type: 'WandbLogger' # 'TensorBoardLogger' or 'WandbLogger'
+    logger_type: 'TensorBoardLogger' # 'TensorBoardLogger' or 'WandbLogger'
+    num_nodes: 1
+    check_val_every_n_epoch: 1
+    devices: 4
