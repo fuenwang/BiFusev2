@@ -50,6 +50,9 @@ If you find our code/models useful, please consider citing our paper:
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
   title={BiFuse++: Self-Supervised and Efficient Bi-Projection Fusion for $360^{\circ }$ Depth Estimation}, 
   year={2022},
+  volume={},
+  number={},
+  pages={1-13},
   doi={10.1109/TPAMI.2022.3203516}
 }
 ```
