@@ -2,7 +2,7 @@
 <img src='src/teaser.jpg'>
 </p>
 
-# BiFuse++
+# [TPAMI 2022] BiFuse++: Self-supervised and Efficient Bi-projection Fusion for 360 Depth Estimation
 This is the official implementation of our TPAMI paper **"BiFuse++: Self-supervised and Efficient Bi-projection Fusion for 360 Depth Estimation"**. 
 
 ### [[Paper](https://arxiv.org/abs/2209.02952)]
