@@ -38,6 +38,7 @@ To train our approach, please refer to [Experiments](./Experiments) for more det
 
 ## Inference
 You can downlaod our pretrained model from [here](https://drive.google.com/file/d/1ZeQrCt4HQrZ3KGdROzqxWdqB4zz1EkTG/view?usp=sharing).
+
 To inference the supervised model trained on Matterport3D, you can type the following command:
 ```bash
 python run_inference.py --mode supervised --ckpt pretrain/supervised_pretrain.pkl  --img data/mp3d.jpg
