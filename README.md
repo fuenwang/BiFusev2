@@ -26,7 +26,7 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
 The installation of pytorch3d will take some time.
 
-## Training and Testing
+## Training
 We provide our training/testing codes for both supervised and self-supervised scenarios. 
 
 For supervised scenario, our model is trained on [Matterport3D](https://niessner.github.io/Matterport/). For self-supervised scenario, we adopt [PanoSUNCG](https://aliensunmin.github.io/project/360-depth/) for training.
@@ -36,9 +36,17 @@ For supervised scenario, our model is trained on [Matterport3D](https://niessner
 
 To train our approach, please refer to [Experiments](./Experiments) for more details.
 
-## To-Do List
-1. Release pretrained weights on Matterport3D and PanoSUNCG.
-2. Provide simple inference code.
+## Inference
+You can downlaod our pretrained model from [here](https://drive.google.com/file/d/1ZeQrCt4HQrZ3KGdROzqxWdqB4zz1EkTG/view?usp=sharing).
+To inference the supervised model trained on Matterport3D, you can type the following command:
+```bash
+python run_inference.py --mode supervised --ckpt pretrain/supervised_pretrain.pkl  --img data/mp3d.jpg
+```
+To inference the self-supervised model trained on PanoSUNCG, you can type the following command:
+```bash
+python run_inference.py --mode selfsupervised --ckpt pretrain/selfsupervised_pretrain.pkl  --img data/panosuncg.jpg
+```
+Notice that "--mode" need to be specified since the inference processes of supervised and self-supervised scenarios are different.
 
 ## Credits
 Our [BasePhotometric.py](./BiFusev2/Loss/BasePhotometric.py) is modified from [link](https://github.com/ClementPinard/SfmLearner-Pytorch).
