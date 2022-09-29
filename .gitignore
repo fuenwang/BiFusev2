@@ -4,6 +4,7 @@
 experiment*
 checkpoints
 save*
+pretrain/
 *pth.tar
 exp*/
 *.zip
