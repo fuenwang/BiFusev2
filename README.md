@@ -37,7 +37,7 @@ For supervised scenario, our model is trained on [Matterport3D](https://niessner
 To train our approach, please refer to [Experiments](./Experiments) for more details.
 
 ## Inference
-You can downlaod our pretrained model from [here](https://drive.google.com/file/d/1ZeQrCt4HQrZ3KGdROzqxWdqB4zz1EkTG/view?usp=sharing).
+You can download our pretrained model from [here](https://drive.google.com/file/d/1ZeQrCt4HQrZ3KGdROzqxWdqB4zz1EkTG/view?usp=sharing).
 
 To inference the supervised model trained on Matterport3D, you can type the following command:
 ```bash
