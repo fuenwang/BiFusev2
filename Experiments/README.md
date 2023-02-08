@@ -4,7 +4,11 @@ We provde the training codes of three experiments.
 2. [[selfsupervised_ours_panosuncg_spl](./selfsupervised_ours_panosuncg_spl)]. The experiments "**BiFuse++ w/ SPL**" (PanoSUNCG) in Table 8 of our main paper, which is trained under self-supervised scenario.
 3. [[selfsupervised_ours_panosuncg_capl](./selfsupervised_ours_panosuncg_capl)]. The experiments "**BiFuse++ w/ CAPL**" (PanoSUNCG) in Table 8 of our main paper, which is trained under self-supervised scenario.
 
-Before starting training, please modify "**dataset_path**" in **config.yaml** to specify the path of your dataset.
+Before starting training, please modify "**dataset_path**" in **config.yaml** to specify the path of your dataset. After that, you can use the following commands for training and validation.
+```bash
+python main.py --mode train
+python main.py --mode val
+```
 
 ## Experimental Setting
 Our code support multi-gpu and multi-node training. 
