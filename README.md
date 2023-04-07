@@ -60,11 +60,11 @@ If you find our code/models useful, please consider citing our paper:
 @article{9874253,
   author={Wang, Fu-En and Yeh, Yu-Hsuan and Tsai, Yi-Hsuan and Chiu, Wei-Chen and Sun, Min},
   journal={IEEE Transactions on Pattern Analysis and Machine Intelligence}, 
-  title={BiFuse++: Self-Supervised and Efficient Bi-Projection Fusion for $360^{\circ }$ Depth Estimation}, 
-  year={2022},
-  volume={},
-  number={},
-  pages={1-13},
-  doi={10.1109/TPAMI.2022.3203516}
-}
+  title={BiFuse++: Self-Supervised and Efficient Bi-Projection Fusion for 360° Depth Estimation}, 
+  year={2023},
+  volume={45},
+  number={5},
+  pages={5448-5460},
+  doi={10.1109/TPAMI.2022.3203516}}
+
 ```
