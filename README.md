@@ -65,6 +65,6 @@ If you find our code/models useful, please consider citing our paper:
   volume={45},
   number={5},
   pages={5448-5460},
-  doi={10.1109/TPAMI.2022.3203516}}
-
+  doi={10.1109/TPAMI.2022.3203516}
+}
 ```
