@@ -26,6 +26,15 @@ pip install "git+https://github.com/facebookresearch/pytorch3d.git"
 ```
 The installation of pytorch3d will take some time.
 
+## Training
+We provide our training/testing codes for both supervised and self-supervised scenarios. 
+
+For supervised scenario, our model is trained on [Matterport3D](https://niessner.github.io/Matterport/). For self-supervised scenario, we adopt [PanoSUNCG](https://aliensunmin.github.io/project/360-depth/) for training.
+
+1. Although we do not provide Matterport3D dataset, we provide a sample dataset which demonstrates the format adopted by our [SupervisedDataset.py](./BiFusev2/Dataset/SupervisedDataset.py). You can download the sample from [here](https://drive.google.com/file/d/1NA5hWrvPGkMjAuktLu6qw91D8WqJv_6U/view?usp=sharing).
+
+#### Because the original SUNCG dataset is not available now, PanoSUNCG is also removed and not available anymore. If you have downloaded any SUNCG-related dataset, I would suggest not to use them even for academic purpose.
+
 ## Inference
 You can download our pretrained model from [here](https://drive.google.com/file/d/1ZeQrCt4HQrZ3KGdROzqxWdqB4zz1EkTG/view?usp=sharing).
 
