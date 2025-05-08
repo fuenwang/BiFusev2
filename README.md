@@ -33,7 +33,13 @@ For supervised scenario, our model is trained on [Matterport3D](https://niessner
 
 1. Although we do not provide Matterport3D dataset, we provide a sample dataset which demonstrates the format adopted by our [SupervisedDataset.py](./BiFusev2/Dataset/SupervisedDataset.py). You can download the sample from [here](https://drive.google.com/file/d/1NA5hWrvPGkMjAuktLu6qw91D8WqJv_6U/view?usp=sharing).
 
-#### Because the original SUNCG dataset is not available now, PanoSUNCG is also removed and not available anymore. If you have downloaded any SUNCG-related dataset, please don't use them for any purpose.
+#### Notice (May 2025)
+
+Due to legal and licensing concerns involving the original SUNCG dataset, the PanoSUNCG dataset has been permanently removed and is no longer available for download.
+
+If you have previously downloaded PanoSUNCG or any dataset derived from SUNCG, please do not use it for any purpose, including research or publication, as it may contain content owned by third parties without proper authorization.
+
+I apologize for any inconvenience and appreciate your understanding. This action is taken out of respect for the rights of content creators and to ensure responsible use of data in the research community.
 
 ## Inference
 You can download our pretrained model from [here](https://drive.google.com/file/d/1ZeQrCt4HQrZ3KGdROzqxWdqB4zz1EkTG/view?usp=sharing).
